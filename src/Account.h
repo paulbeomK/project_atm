@@ -1,6 +1,7 @@
 #ifndef ACCOUNT_H
 #define ACCOUNT_H
 #include <string>
+#include <memory>
 
 class Account{
 private:
@@ -9,6 +10,8 @@ private:
 
 public:
     Account(const std::string& id, int inital_balance);
+    ~Account();
+    
     const std::string& get_account_id() const;
     int get_balance() const;
     void deposit(int amount);
