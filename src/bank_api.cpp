@@ -9,8 +9,10 @@ BankAPI::~BankAPI(){}
 
 void BankAPI::init_data(){
     // initialize with virtual sample data
+    // assumption: one sample_card can possess more than one account ...
+    //      For that reason, pin number is shared.
     auto account1 = std::make_shared<Account>("1104123456", 5000);
-    auto account2 = std::make_shared<Account>("1103412345678", 7500);
+    auto account2 = std::make_shared<Account>("1103456789", 10000);
 
     UserData user={
         "SampleCard123",    //sample card_num
