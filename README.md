@@ -24,6 +24,8 @@ Main application (main.cpp)
 ### Build & Test
 -------------------------------------------
 ```bash
+git clone https://github.com/paulbeomK/project_atm.git
+cd project_atm
 cmake CMakeLists.txt
 make
 ```
