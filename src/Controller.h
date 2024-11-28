@@ -16,10 +16,11 @@ public:
 
     void insert_card(const std::string& card_num);
     bool enter_pin(const std::string& pin);
-    std::vector<std::string> get_account() const;
+    std::vector<std::string> get_accounts() const;
     bool deposit(const std::string& account_num, int amount);
     bool withdraw(const std::string& account_num, int amount);
     void eject_card();
+    int check_balance(const std::string& account_num) const;
 
 private:
     std::unique_ptr<CardReader> cardReader_;
