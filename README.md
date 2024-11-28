@@ -23,10 +23,22 @@ Main application (main.cpp)
 
 ### Build & Test
 -------------------------------------------
-`cmake CMakeLists.txt`
-`make`
+```bash
+cmake CMakeLists.txt
+make
+```
 
 - Main
     - `./project_atm`
-- unit_test
+- Unit_test
     - `./test_atm`
+
+
+- Sample card info for test 
+    (can be found in src/bank_api.cpp)
+    - card_num
+        - `'SampleCard123'`
+    - PIN
+        - `1234`
+    - Accounts
+        - Multiple (2 accounts)
