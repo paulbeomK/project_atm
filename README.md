@@ -24,6 +24,8 @@ Main application (main.cpp)
 ### Build & Test
 -------------------------------------------
 `cmake CMakeLists.txt`
+`make`
+
 - Main
     - `./project_atm`
 - unit_test
